@@ -1,4 +1,23 @@
 /* Basic */
+body {
+
+    font-family: 'Inter', sans-serif;
+    color: #403F3D;
+
+    background-color: #fae4f6;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+img {
+display: block;
+    max-width: 100%;
+    height: auto;
+}
 
 button {
     display: block;
@@ -17,10 +36,52 @@ p {
     margin: 0;
 }
 
+.container {
+    min-width: 500px;
+    padding-top: 20px;
+    padding-right: 16px;
+        padding-left: 16px;
+}
+    @media screen and (min-width: 768px) {
+.container {
+             max-width: 768px;
+                padding-right: 40px;
+                    padding-left: 40px;
+        }
+               
+        }
+
+     @media screen and (min-width: 1440px) {
+        .container {
+            max-width: 1440px;
+        }
+                    
+                }
+
+
 /* Form */
+
+.form-title {
+    font-size: 30px;
+font-weight: 600;
+text-align: center;
+text-transform: uppercase;
+
+margin-bottom: 30px;
+}
+
 .form-list {
 display: flex;
 justify-content: center;
+flex-wrap: wrap;
+
+gap: 5%;
+}
+
+
+
+.form-input {
+    display: none;
 }
 
 .form-img {
@@ -36,11 +97,13 @@ justify-content: center;
 }
 
 .image-solution {
-    position: absolute;
+position: absolute;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
+
+    z-index: 3;
 
     width: 600px ;
 }
@@ -74,6 +137,7 @@ justify-content: center;
 gap: 20px;
 
 }
+
 
 .btn {
    width: 160px;
@@ -124,6 +188,8 @@ background-color: rgb(212, 83, 83);
 .outer-game-container.snail {
 width: 600px;
 }
+
+
 
  .outer-game-container::after {
     width: 150px;
@@ -185,7 +251,7 @@ width: 600px;
 }
 
 .outer-game-container.easy-level .game-container::before {
-  width: 150px;
+width: 150px;
   border: 2px solid #000;
 }
 
@@ -303,6 +369,10 @@ width: 600px;
 /* game-containers */
 .outer-game-container {
     position: relative;
+}
+
+.outer-game-container.hidden {
+    opacity: 0;
 }
 
 .game-container {
@@ -433,6 +503,8 @@ display: flex;
 .game {
     display: flex;
     flex-wrap: wrap;
+
+    background-color: #fff;;
 }
 
 
@@ -461,6 +533,8 @@ height: 30px;
 
     cursor: pointer;
 }
+
+
 
 .clue-item-game.black {
     background-color: #000;

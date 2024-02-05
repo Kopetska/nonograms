@@ -12,6 +12,7 @@ import { runBasicMarkup } from "./function-basic-markup.js";
 // makeButterflyPictureMarkup();
 // makeCrabPictureMarkup();
 // makePiranhaPictureMarkup();
+
 runBasicMarkup();
 
 const listOfAllGames = [
@@ -36,6 +37,13 @@ const form = document.querySelector("form");
 
 function onFormClick(event) {
   listOfAllGames[Number(event.target.value)]();
+  indexOfGame = Number(event.target.value);
+
+  const outerGameContainer = document.querySelector(".outer-game-container");
+
+  if (event.target.checked) {
+    outerGameContainer.classList.remove("hidden");
+  }
 }
 
 form.addEventListener("change", onFormClick);
@@ -136,6 +144,9 @@ function onButtonContinueClick() {
 }
 
 function onButtonRandomClick() {
+  const outerGameContainer = document.querySelector(".outer-game-container");
+  outerGameContainer.classList.remove("hidden");
+
   const randomGame =
     listOfAllGames[Math.floor(Math.random() * listOfAllGames.length)];
 
@@ -157,15 +168,9 @@ function onButtonSolutionClick() {
   setTimeout(() => {
     imageSolution.remove();
   }, 7000);
+
+  console.log(outerGameContainer);
 }
-
-// gameRef.addEventListener("click", playGame);
-
-// buttonReset.addEventListener("click", onButtonResetClick);
-// buttonContinue.addEventListener("click", onButtonContinueClick);
-// buttonSave.addEventListener("click", onButtonSaveClick);
-// buttonRandom.addEventListener("click", onButtonRandomClick);
-// buttonSolution.addEventListener("click", onButtonSolutionClick);
 
 gameRef.addEventListener("click", playGame);
 
