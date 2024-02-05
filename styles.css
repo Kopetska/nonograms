@@ -1,0 +1,467 @@
+/* Basic */
+
+button {
+    display: block;
+    border-style: none;
+
+    cursor: pointer;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+p {
+    margin: 0;
+}
+
+/* Form */
+.form-list {
+display: flex;
+justify-content: center;
+}
+
+.form-img {
+    width: 100px;
+    height: 100px;
+}
+
+/* Page elements */
+
+.cross-mark {
+    width: 20px;
+    height: 20px;
+}
+
+.image-solution {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    width: 600px ;
+}
+
+.congratulation {
+    height: 50px;
+
+    font-size: 35px;
+    font-weight: 600;
+    text-align: center;
+
+    color: rgb(4, 106, 4);
+    
+    margin-bottom: 40px;
+}
+
+.table-game-buttons-wrapper {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    
+}
+
+
+/* Buttons */
+
+.btn-list {
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+gap: 20px;
+
+}
+
+.btn {
+   width: 160px;
+    height: 60px;
+
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+
+    margin-left: auto;
+    border-radius: 8px; 
+}
+
+.button-dark-light {
+    width: 80px;
+    height: 60px;
+
+    border-radius: 8px; 
+
+    background-color: lavender;
+
+    cursor: pointer;
+
+    margin-left: auto;
+}
+
+.button-reset {
+    background-color: rgb(74, 19, 201);
+}
+
+.button-continue {
+    background-color: rgb(203, 203, 42); 
+}
+
+.button-save {
+background-color: rgb(212, 83, 83);
+}
+
+.button-random {
+    background-color: rgb(238, 60, 226);
+}
+
+.button-solution {
+    background-color: rgb(23, 136, 23);
+}
+
+/* snail */
+.outer-game-container.snail {
+width: 600px;
+}
+
+ .outer-game-container::after {
+    width: 150px;
+       border: 2px solid #000;
+} 
+
+.outer-game-container::before {
+  width: 150px;
+    border: 2px solid #000;
+
+}
+
+.outer-game-container.snail .game-container::after {
+  width: 150px;
+    border: 2px solid #000;
+
+}
+
+.outer-game-container.snail .game-container::before {
+  width: 150px;
+    border: 2px solid #000;
+
+}
+
+.outer-game-container.snail .top-line::after {
+height: 150px;
+  border: 2px solid #000;
+
+}
+
+.outer-game-container.snail .bottom-line::after {
+height: 150px;
+  border: 2px solid #000;
+}
+
+.outer-game-container.snail .top-clues {
+width: 450px;
+    height: 150px;
+}
+
+.outer-game-container.snail .left-clues {
+width: 150px;
+    height: 300px;
+}
+
+.outer-game-container.snail .game {
+width: 450px;
+}
+
+/* easy-level */
+.outer-game-container.easy-level {
+width: 600px;
+}
+
+.outer-game-container.easy-level .game-container::after {
+  width: 150px;
+    border: 2px solid #000;
+
+}
+
+.outer-game-container.easy-level .game-container::before {
+  width: 150px;
+  border: 2px solid #000;
+}
+
+.outer-game-container.easy-level .top-line::after {
+height: 150px;
+  border: 2px solid #000;
+}
+
+.outer-game-container.easy-level .bottom-line::after {
+height: 150px;
+  border: 2px solid #000;
+}
+
+.outer-game-container.easy-level .bottom-line::before {
+height: 150px;
+  border: 2px solid #000;
+}
+
+.outer-game-container.easy-level .top-clues {
+width: 450px;
+    height: 150px;
+}
+
+.outer-game-container.easy-level .left-clues {
+width: 150px;
+    height: 450px;
+}
+
+.outer-game-container.easy-level .game {
+width: 450px;
+}
+
+/*  medium level  */
+
+ .outer-game-container.medium-level {
+width: 700px;
+} 
+
+ .outer-game-container.medium-level::before {
+right: 340px;
+width: 160px;
+} 
+
+ .outer-game-container.medium-level::after {
+    width: 180px;
+    left: 360px;
+       border: 2px solid #000;
+}
+
+  .outer-game-container.medium-level .game-container::after {
+  width: 200px;
+ 
+  border: 2px solid #000;
+}
+
+.outer-game-container.medium-level .game-container::before {
+  width: 160px;
+
+border: 2px solid #000;
+
+}
+
+.outer-game-container.medium-level .top-line::after {
+height: 200px;
+width: 700px;
+
+border: 2px solid #000;
+}
+
+.outer-game-container.medium-level .bottom-line::after {
+    top: 300px;
+
+height: 200px;
+
+border: 2px solid #000;
+}
+
+.outer-game-container.medium-level .bottom-line::before {
+height: 100px;
+
+} 
+
+.outer-game-container.medium-level .top-clues {
+width: 600px;
+    height: 100px;
+}
+
+.outer-game-container.medium-level .left-clues {
+width: 100px;
+    height: 600px;
+}
+
+.outer-game-container.medium-level .game {
+width: 600px;
+}
+
+.outer-game-container.medium-level .clue-item {
+    width: 20px;
+    height: 20px;
+
+    font-size: 13px;
+    
+}
+
+.outer-game-container.medium-level .clue-item-game {
+    width: 20px;
+    height: 20px;
+}
+
+.outer-game-container.medium-level .empty-block {
+    width: 100px;
+    height: 100px;
+}
+
+/* game-containers */
+.outer-game-container {
+    position: relative;
+}
+
+.game-container {
+    position: relative;
+}
+
+/* Pseudoelements vertical */
+
+.outer-game-container::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+
+     content: '';
+  display: inline-block;
+
+  pointer-events: none;
+}
+
+.outer-game-container::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 50%;
+
+     content: '';
+  display: inline-block;
+
+  pointer-events: none;
+}
+
+.game-container::after {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+
+     content: '';
+  display: inline-block;
+
+  pointer-events: none;
+ 
+}
+
+.game-container::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+
+     content: '';
+  display: inline-block;
+
+  pointer-events: none;
+ 
+}
+
+/* Pseudoelements horisontal */
+
+.top-line::after {
+ position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+
+     content: '';
+  display: inline-block;
+
+  pointer-events: none;
+}
+
+.bottom-line::after {
+ position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+
+     content: '';
+  display: inline-block;
+
+  pointer-events: none;
+}
+
+.bottom-line::before {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+     content: '';
+  display: inline-block;
+
+  pointer-events: none;
+} 
+
+
+/* Blocks of game */
+
+
+.top-line {
+display: flex;
+}
+
+.bottom-line {
+    position: relative;
+
+    display: flex;
+}
+
+.empty-block {
+    width: 150px;
+    height: 150px;
+
+    background-color: rgb(221, 218, 218);
+}
+
+.top-clues {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.left-clues {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.game {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.clue-item {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+width: 30px;
+height: 30px;
+border: 1px solid rgb(114, 113, 113);
+
+    background-color: beige;
+}
+
+.clue-item-game {
+display: flex;
+   justify-content: center;
+   align-items: center;
+
+    width: 30px;
+height: 30px;
+
+
+    border: 1px solid rgb(114, 113, 113);
+
+    cursor: pointer;
+}
+
+.clue-item-game.black {
+    background-color: #000;
+}
